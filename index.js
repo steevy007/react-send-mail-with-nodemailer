@@ -28,7 +28,7 @@ app.post('/send',(req,res)=>{
   }
     var mailOptions = {
         from: process.env.EMAIL,
-        to: 'steeve.sanon@atalou.info',
+        bcc: data.to,
         subject: data.subject,
         text: data.text
       };
